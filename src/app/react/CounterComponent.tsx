@@ -7,8 +7,6 @@ import {
   OnChanges,
   OnDestroy,
   Input,
-  Output,
-  EventEmitter,
   SimpleChanges
 } from "@angular/core";
 import * as React from "react";
@@ -26,7 +24,6 @@ export class CounterComponent implements AfterViewInit, OnDestroy, OnChanges {
   @ViewChild("counterComponent", { static: false }) containerRef: ElementRef;
 
   @Input() public counter = 10;
-  @Output() public componentClick = new EventEmitter<void>();
 
   constructor() {
     this.Increment = this.Increment.bind(this);

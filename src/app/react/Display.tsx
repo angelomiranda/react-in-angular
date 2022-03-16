@@ -7,9 +7,9 @@ function Display() {
     <div>
       <Input type="number" placeholder="Enter a number" />
       <br />
-      <Input type="text" placeholder="Enter a text" />
+      <Input type="time" placeholder="Enter a email" />
       <br />
-      <Input type="email" placeholder="Enter a email" />
+      <Input type="date" />
     </div>
   );
 }
