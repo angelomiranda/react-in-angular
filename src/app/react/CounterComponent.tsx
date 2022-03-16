@@ -11,8 +11,8 @@ import {
 } from "@angular/core";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-// Main App
 import Counter from "../react/Counter";
 
 @Component({
