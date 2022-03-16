@@ -1,24 +1,17 @@
 import * as React from "react";
 
-function Input(props) {
-  const [inputType] = React.useState(props.type);
-  const [inputValue, setInputValue] = React.useState("");
+import Input from "./Input";
 
-  const handleChange = (event) => {
-    setInputValue(event.target.value);
-    if (props.onChange) props.onChange(inputValue);
-  };
-
+function Display() {
   return (
-    <>
-      <input
-        type={inputType}
-        name="form-input"
-        value={inputValue}
-        onChange={handleChange}
-      />
-    </>
+    <div>
+      <Input type="number" placeholder="Enter a number" />
+      <br />
+      <Input type="text" placeholder="Enter a text" />
+      <br />
+      <Input type="email" placeholder="Enter a email" />
+    </div>
   );
 }
 
-export default Input;
+export default Display;

@@ -1,21 +1,30 @@
 import * as React from "react";
 
+import "./style.css";
+
 function User() {
-  const [user, setUser] = React.useState({});
+  const [users, setUsers] = React.useState([]);
 
   React.useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos/1")
-      .then((response) => response.json())
-      .then((json) => setUser(json));
+    setTimeout(() => {
+      fetch("https://jsonplaceholder.typicode.com/users")
+        .then((response) => response.json())
+        .then((json) => setUsers(json));
+    }, 1000);
   });
 
+  if (!users.length) {
+    return <div className="t-10">Loading Data. Please wait...</div>;
+  }
+
+  const renderUsers = users.map(user => {
+    return <div>{user.id} {user.name} {user.email}</div>
+  }
+
   return (
-    <ul>
-      <li>{user.userId}</li>
-      <li>{user.id}</li>
-      <li>{user.title}</li>
-      <li>{JSON.stringify(user.completed)}</li>
-    </ul>
+    <div className="t-10">
+      { renderUsers }
+    </div>
   );
 }
 
