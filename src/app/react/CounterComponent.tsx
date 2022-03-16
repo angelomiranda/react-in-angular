@@ -1,11 +1,3 @@
-/*
-  1. Api Call
-  2. Rendering React Components
-  3. React Supplying Data to Angular - Counter Example
-    - Angular Rendering Data
-  4. Event Handling
-*/
-
 import {
   AfterViewInit,
   Component,

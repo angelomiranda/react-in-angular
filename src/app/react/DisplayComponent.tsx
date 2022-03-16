@@ -3,13 +3,7 @@ import {
   Component,
   ViewEncapsulation,
   ViewChild,
-  ElementRef,
-  OnChanges,
-  OnDestroy,
-  Input,
-  Output,
-  EventEmitter,
-  SimpleChanges
+  ElementRef
 } from "@angular/core";
 import * as React from "react";
 import * as ReactDOM from "react-dom";
