@@ -17,7 +17,7 @@ import Counter from "../react/Counter";
 
 @Component({
   selector: "counter",
-  templateUrl: "../main/counter.component.html",
+  templateUrl: "../templates/counter.component.html",
   encapsulation: ViewEncapsulation.None
 })
 export class CounterComponent implements AfterViewInit, OnDestroy, OnChanges {

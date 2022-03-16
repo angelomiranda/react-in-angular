@@ -9,21 +9,21 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import Fetch from "./Fetch";
+import Display from "../react/Display";
 
 @Component({
-  selector: "fetch",
-  templateUrl: "../main/fetch.component.html",
+  selector: "display",
+  templateUrl: "../templates/display.component.html",
   encapsulation: ViewEncapsulation.None
 })
-export class FetchComponent implements AfterViewInit {
-  @ViewChild("fetchComponent", { static: false }) containerRef: ElementRef;
+export class DisplayComponent implements AfterViewInit {
+  @ViewChild("displayComponent", { static: false }) containerRef: ElementRef;
 
   ngAfterViewInit() {
     this.render();
   }
 
   private render() {
-    ReactDOM.render(<Fetch />, this.containerRef.nativeElement);
+    ReactDOM.render(<Display />, this.containerRef.nativeElement);
   }
 }

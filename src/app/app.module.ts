@@ -4,9 +4,9 @@ import { AppRoutingModule } from "./app.routing.module";
 
 import { AppComponent } from "./app.component";
 import { SidebarComponent } from "./sidebar/sidebar.component";
-import { DisplayComponent } from "./react/DisplayComponent";
-import { FetchComponent } from "./react/FetchComponent";
-import { CounterComponent } from "./react/CounterComponent";
+import { DisplayComponent } from "./wrappers/DisplayComponent";
+import { FetchComponent } from "./wrappers/FetchComponent";
+import { CounterComponent } from "./wrappers/CounterComponent";
 
 @NgModule({
   declarations: [

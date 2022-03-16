@@ -1,8 +1,8 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router"; // CLI imports router
-import { DisplayComponent } from "./react/DisplayComponent";
-import { FetchComponent } from "./react/FetchComponent";
-import { CounterComponent } from "./react/CounterComponent";
+import { DisplayComponent } from "./wrappers/DisplayComponent";
+import { FetchComponent } from "./wrappers/FetchComponent";
+import { CounterComponent } from "./wrappers/CounterComponent";
 
 const routes: Routes = [
   { path: "display", component: DisplayComponent },
