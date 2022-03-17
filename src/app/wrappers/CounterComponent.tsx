@@ -16,7 +16,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Counter from "../react/Counter";
 
 @Component({
-  selector: "counter",
   templateUrl: "../templates/counter.component.html",
   encapsulation: ViewEncapsulation.None
 })
@@ -53,8 +52,6 @@ export class CounterComponent implements AfterViewInit, OnDestroy, OnChanges {
   }
 
   private render() {
-    const { counter } = this;
-
     ReactDOM.render(
       <Counter decrement={this.Decrement} increment={this.Increment} />,
       this.containerRef.nativeElement

@@ -12,7 +12,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Fetch from "../react/Fetch";
 
 @Component({
-  selector: "fetch",
   templateUrl: "../templates/fetch.component.html",
   encapsulation: ViewEncapsulation.None
 })

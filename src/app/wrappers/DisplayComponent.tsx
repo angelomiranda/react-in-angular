@@ -12,7 +12,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Display from "../react/Display";
 
 @Component({
-  selector: "display",
   templateUrl: "../templates/display.component.html",
   encapsulation: ViewEncapsulation.None
 })

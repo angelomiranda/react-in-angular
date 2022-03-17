@@ -8,7 +8,7 @@ function User() {
       fetch("https://jsonplaceholder.typicode.com/users")
         .then((response) => response.json())
         .then((json) => setUsers(json));
-    }, 100);
+    }, 1500);
   });
 
   if (!users.length) {
@@ -17,7 +17,7 @@ function User() {
 
   const renderUsers = users.map(user => {
     return (
-      <tr>
+      <tr key={user.id}>
         <th>{user.id}</th>
         <td>{user.name}</td>
         <td>{user.username}</td>
